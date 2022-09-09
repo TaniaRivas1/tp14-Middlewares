@@ -1,0 +1,72 @@
+body {
+    background-color: #191411;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+
+.barra {
+    color: aqua;
+}
+
+.titulos {
+    color: #FFE3BA;
+}
+
+.nosotros-p {
+    background-color: #3A2412;
+    color: aliceblue;
+}
+
+.nosotros-img {
+    background-color: #191411;
+}
+
+.tarjetas {
+
+    opacity: 70%;
+    transition: 1s;
+    border-radius: 1rem;
+    margin-top: 1rem;
+
+}
+
+.tarjetas:hover {
+    background-color: #3A2412;
+    opacity: 100%;
+}
+
+.fondo-tienda {
+    background-image: url(../images/fondo-tienda.jpg);
+}
+
+.tienda {
+    color: #FFE3BA;
+    background-color: #241911;
+    transition: 0.5s;
+}
+
+
+.tienda:hover {
+    color: #3A2412;
+    background-color: #FFE3BA;
+}
+
+.ventana2 {
+    background-color: rgb(112, 77, 47);
+}
+
+.ventana {
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+.formulario {
+    background-color: #3A2412;
+    border-radius: 1rem;
+}
+
+.redes {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    color: #FFE3BA;
+}

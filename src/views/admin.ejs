@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+	<%- include('partials/head') %>
+<body>
+	<%- include('partials/header', { title: "Home" }) %>
+    <h1 class="titulos col-12 py-2 py-xl-5 text-center">Hola admin : <%= admin %> </h1>
+    <div class="fondo-nosotros-productos">
+    <div class="container mb-5">
+        <section id="productos">
+
+            <div>
+                <h1 class="titulos col-12 py-2 py-xl-5 text-center ">PRODUCTOS</h1>
+            </div>
+            <article>
+                <div class="row justify-content-between">
+                    <div class="tarjetas p-3 col-12 col-md-5 col-lg-3 text-center">
+                        <img src="/images/bombones-tablet.jpg" alt="Bombones surtidos" class="img-fluid">
+                        <h2 class="p-2">Bombones Surtidos</h2>
+                        <p>Elige los bombones que más te gusten</p>
+                    </div>
+                    <div class="tarjetas p-3 col-12 col-md-5 col-lg-3 text-center">
+                        <img src="/images/trufa-tablet.jpg" alt="Trufas" class="img-fluid">
+                        <h2 class="p-2">Trufas Rellenas</h2>
+                        <p>Trufas recubiertas de chocolate con leche, rellenas de mousse de frambuesa</p>
+                    </div>
+                    <div class="tarjetas p-3 col-12 col-md-5 col-lg-3 text-center">
+                        <img src="/images/chocolatebarra-tablet.jpg" alt="chocolate comercial" class="img-fluid">
+                        <h2 class="p-2">Chocolates en barra</h2>
+                        <p>También tenemos los tradicionales chocolates en barra</p>
+                    </div>
+                    <div class="tarjetas p-3 col-12 col-md-5 col-lg-3 text-center">
+                        <img src="/images/premium-tablet.jpg" alt="chocolates especiales" class="img-fluid">
+                        <h2 class="p-2">Chocolates Especiales</h2>
+                        <p>Chocolates de la maxima calidad premium.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        </div>
+        </div>
+        <div class="fondo-tienda">
+            <section id="tienda">
+                <div class="container pb-5">
+                    <div class="row">
+                        <div id="tiendaenlace" class="titulos col py-2 py-xl-5 text-center">
+                            <h1>TIENDA</h1>
+                        </div>
+                    </div>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="tienda card shadow-sm">
+                                    <img src="/images/tienda1-tablet.jpg" class="card-img-top" alt="Trufas" width="768">
+                                    <div class="card-body">
+                                        <h2 class="card-title h3">TRUFAS CON RELLENO</h2>
+                                        <p class="card-text">Trufas a elección (opción vegano y celiaco)</p>
+                                        <!-- data-bs-toggle y data-bs-target -->
+                                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#trufas">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ventana modal fade" id="trufas" tabindex="-1" aria-labelledby="trufasrellenas" aria-hidden="true">
+                                <div class="ventana2 modal-dialog modal-lg">
+                                    <div class="ventana modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="trufasrellenas">STOCK DISPONIBLE</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/images/tienda1.jpg" alt="trufas" class="img-fluid">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="tienda card shadow-sm">
+                                    <img src="/images/tienda2-tablet.jpg" class="card-img-top" alt="belga" width="768">
+                                    <div class="card-body">
+                                        <h2 class="card-title h3">CHOCOLATE BELGA</h2>
+                                        <p class="card-text">Chocolate de calidad amargo, con leche y blanco</p>
+                                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#belga">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="belga" tabindex="-1" aria-labelledby="chocobelga" aria-hidden="true">
+                                <div class="ventana2 modal-dialog modal-lg">
+                                    <div class="ventana modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="chocobelga">STOCK DISPONIBLE</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/images/tienda2.jpg" alt="belga" class="img-fluid">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="tienda card shadow-sm">
+                                    <img src="/images/tienda3-tablet.jpg" class="card-img-top" alt="Torta" width="768">
+                                    <div class="card-body">
+                                        <h2 class="card-title h3">TORTA DE CHOCOLATE</h2>
+                                        <p class="card-text">Deliciosa torta con chocolate amargo y mousse.</p>
+                                        <!-- data-bs-toggle y data-bs-target -->
+                                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#torta">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="torta" tabindex="-1" aria-labelledby="chocotorta" aria-hidden="true">
+                                <div class="ventana2 modal-dialog modal-lg">
+                                    <div class="ventana modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="chocotorta">SIN STOCK (AGOTADO)</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/images/tienda3.jpg" alt="torta" class="img-fluid">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" disabled>Comprar</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="tienda card shadow-sm">
+                                    <img src="/images/tienda4-tablet.jpg" class="card-img-top" alt="frambuesas-con-chocolate" width="768">
+                                    <div class="card-body">
+                                        <h2 class="card-title h3">FRUTA CON CHOCOLATE</h2>
+                                        <p class="card-text">Deliciosas frambuesas recubiertas de chocolate</p>
+                                        <!-- data-bs-toggle y data-bs-target -->
+                                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#frambuesa">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ventana modal fade" id="frambuesa" tabindex="-1" aria-labelledby="chocoframbuesa" aria-hidden="true">
+                                <div class="ventana2 modal-dialog modal-lg">
+                                    <div class="ventana modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="chocoframbuesa">STOCK DISPONIBLE</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/images/tienda4.jpg" alt="frambuesa-con-chocolate" class="img-fluid">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="tienda card shadow-sm">
+                                    <img src="/images/tienda5-tablet.jpg" class="card-img-top" alt="chocohuevo" width="768">
+                                    <div class="card-body">
+                                        <h2 class="card-title h3">HUEVO DE CHOCOLATE</h2>
+                                        <p class="card-text">Delicioso huevo de chocolate para compartir.</p>
+                                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#chocohuevo">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="chocohuevo" tabindex="-1" aria-labelledby="chocolatehuevo" aria-hidden="true">
+                                <div class="ventana2 modal-dialog modal-lg">
+                                    <div class="ventana modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="chocolatehuevo">SIN STOCK (AGOTADO)</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/images/tienda5.jpg" alt="chocohuevo" class="img-fluid">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" disabled>Comprar</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="tienda card shadow-sm">
+                                    <img src="/images/tienda6-tablet.jpg" class="card-img-top" alt="chocolate-argentino" width="768">
+                                    <div class="card-body">
+                                        <h2 class="card-title h3">CHOCOLATE ARGENTINO</h2>
+                                        <p class="card-text">Delicioso chocolate hecho por nuestra gente.</p>
+                                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#chocoarg">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="chocoarg" tabindex="-1" aria-labelledby="chocolatearg" aria-hidden="true">
+                                <div class="ventana2 modal-dialog modal-lg">
+                                    <div class="ventana modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="chocolatearg">STOCK DISPONIBLE</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/images/tienda6.jpg" alt="chocolate-argentino" class="img-fluid">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    <%- include('partials/footer') %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body></html>
